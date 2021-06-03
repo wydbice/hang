@@ -1,56 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <title>Capri</title>
+    <title>Snake Duh Game</title>
+    <style>
+      canvas {
+        display: block;
+        margin: 0 auto;
+      }
+      body {
+        background-color: black;
+      }
+      h1 {
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-align: center;
+      }
+      #WhenDaImpostorIsSusPleaseSellShrekBitcoinOrEthereum {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: -2;
+      }
+      .rotate {
+        animation: rotation 2s infinite linear;
+      }
+      #drippyMotherFucker {
+        position: fixed;
+        top: 40vh;
+        right: 10vw;
+        height: 30vh;
+        width: 20vw;
+        z-index: -1;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Capri</h1>
-    <p>Start Hanging Today</p>
-    <div class="game-container">
-      <svg height="250" width="200" class="figure-container">
-        <!-- Rod -->
-        <line x1="60" y1="20" x2="140" y2="20" />
-        <line x1="140" y1="20" x2="140" y2="50" />
-        <line x1="60" y1="20" x2="60" y2="230" />
-        <line x1="20" y1="230" x2="100" y2="230" />
-
-        <!-- Head -->
-        <circle cx="140" cy="70" r="20" class="figure-part" />
-        <!-- Body -->
-        <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
-        <!-- Arms -->
-        <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
-        <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
-        <!-- Legs -->
-        <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
-        <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
-      </svg>
-
-      <div class="wrong-letters-container">
-        <div id="wrong-letters"></div>
-      </div>
-
-      <div class="word" id="word"></div>
-    </div>
-
-    <!-- Container for final message -->
-    <div class="popup-container" id="popup-container">
-      <div class="popup">
-        <h2 id="final-message"></h2>
-        <h3 id="final-message-reveal-word"></h3>
-        <button id="play-button">Play Again</button>
-      </div>
-    </div>
-
-    <!-- Notification -->
-    <div class="notification-container" id="notification-container">
-      <p>You have already entered this letter</p>
-    </div>
-
-    <script src="../app/index.js"></script>
-  </body>
+  <h1>Score 15 Points To Get Through To The Purchase Link!</h1>
+  <img
+    src="img/impostorsus.png"
+    id="WhenDaImpostorIsSusPleaseSellShrekBitcoinOrEthereum"
+  />
+  <img src="img/poggers.png" id="drippyMotherFucker" class="rotate" />
+  <canvas id="snake" width="608" height="608"></canvas>
+  <script src="snake.js"></script>
 </html>
